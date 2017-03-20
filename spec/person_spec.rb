@@ -24,7 +24,7 @@ describe Person do
   end
 
   it '#upcase' do
-    person = Peroson::Person.new('giovanni')
+    person = Person::Person.new('giovanni')
 
     result = person.upcase.to_s
 

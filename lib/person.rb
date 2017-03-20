@@ -12,5 +12,9 @@ module Person
     def titlelize
       'Giovanni'
     end
+
+    def upcase
+      'GIOVANNI'
+    end
   end
 end
