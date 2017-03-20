@@ -8,5 +8,9 @@ module Person
     def to_s
       'giovanni'
     end
+
+    def titlelize
+      'Giovanni'
+    end
   end
 end
