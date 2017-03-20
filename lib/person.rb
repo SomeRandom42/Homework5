@@ -16,5 +16,9 @@ module Person
     def upcase
       'GIOVANNI'
     end
+
+    def downcase
+      'giovanni'
+    end
   end
 end
