@@ -19,5 +19,16 @@ module Person
     def upcase
       self.first_name = first_name.upcase
     end
+
+    def downcase
+    end
+
+    def hyphenize
+      self.first_name = first_name.split('').join('-')
+    end
+
+    def reverse
+      self.first_name = first_name.reverse
+    end
   end
 end
