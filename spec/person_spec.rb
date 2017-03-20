@@ -18,48 +18,48 @@ describe Person do
   it '#titlelize' do
     person = Person::Person.new('giovanni')
 
-    result = person.titlelize.to_s
+    person.titlelize
 
-    expect(result).to eq('Giovanni')
+    expect(person.to_s).to eq('Giovanni')
   end
 
   it '#upcase' do
     person = Person::Person.new('giovanni')
 
-    result = person.upcase.to_s
+    person.upcase
 
-    expect(result).to eq('GIOVANNI')
+    expect(person.to_s).to eq('GIOVANNI')
   end
 
   it '#downcase' do
     person = Person::Person.new('giovanni')
 
-    result = person.downcase.to_s
+    person.downcase
 
-    expect(result).to eq('giovanni')
+    expect(person.to_s).to eq('giovanni')
   end
 
   it '#reverse' do
     person = Person::Person.new('giovanni')
 
-    result = person.reverse.to_s
+    person.reverse
 
-    expect(result).to eq('innavoig')
+    expect(person.to_s).to eq('innavoig')
   end
 
   it '#hyphenize' do
     person = Person::Person.new('giovanni')
 
-    result = person.hyphenize.to_s
+    person.hyphenize
 
-    expect(result).to eq('g-i-o-v-a-n-n-i')
+    expect(person.to_s).to eq('g-i-o-v-a-n-n-i')
   end
 
   it '#undo' do
     person = Person::Person.new('giovanni')
 
-    result = person.titlelize.upcase.reverse.downcase.undo.undo.undo.undo.to_s
+    person.titlelize.upcase.reverse.downcase.undo.undo.undo.undo
 
-    expect(result).to eq('giovanni')
+    expect(person.to_s).to eq('giovanni')
   end
 end
