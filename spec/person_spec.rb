@@ -31,7 +31,7 @@ describe Person do
     expect(person.to_s).to eq('GIOVANNI')
   end
 
-  it '#downcase' do
+  xit '#downcase' do
     person = Person::Person.new('giovanni')
 
     person.downcase
@@ -39,7 +39,7 @@ describe Person do
     expect(person.to_s).to eq('giovanni')
   end
 
-  it '#reverse' do
+  xit '#reverse' do
     person = Person::Person.new('giovanni')
 
     person.reverse
@@ -47,7 +47,7 @@ describe Person do
     expect(person.to_s).to eq('innavoig')
   end
 
-  it '#hyphenize' do
+  xit '#hyphenize' do
     person = Person::Person.new('giovanni')
 
     person.hyphenize
@@ -55,7 +55,7 @@ describe Person do
     expect(person.to_s).to eq('g-i-o-v-a-n-n-i')
   end
 
-  it '#undo' do
+  xit '#undo' do
     person = Person::Person.new('giovanni')
 
     person.titlelize.upcase.reverse.downcase.undo.undo.undo.undo

@@ -15,5 +15,9 @@ module Person
     def titlelize
       self.first_name = first_name.capitalize
     end
+
+    def upcase
+      self.first_name = first_name.upcase
+    end
   end
 end
